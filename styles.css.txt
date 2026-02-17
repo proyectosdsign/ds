@@ -1,0 +1,139 @@
+root {
+  --negro #111111;
+  --cafe #8B5A2B;
+  --fondo #F7F5F2;
+  --gris #555555;
+}
+
+ {
+  margin 0;
+  padding 0;
+  box-sizing border-box;
+}
+
+body {
+  font-family Arial, Helvetica, sans-serif;
+  color var(--negro);
+  background white;
+}
+
+.container {
+  width 90%;
+  max-width 1100px;
+  margin auto;
+}
+
+ HEADER 
+.header {
+  border-bottom 2px solid var(--cafe);
+}
+
+.header-content {
+  display flex;
+  justify-content space-between;
+  align-items center;
+  padding 15px 0;
+}
+
+.logo {
+  height 60px;
+}
+
+.menu {
+  list-style none;
+  display flex;
+  gap 20px;
+}
+
+.menu a {
+  text-decoration none;
+  color var(--negro);
+  font-weight bold;
+}
+
+.menu ahover {
+  color var(--cafe);
+}
+
+ HERO 
+.hero {
+  background var(--fondo);
+  padding 80px 20px;
+  text-align center;
+}
+
+.hero h1 {
+  font-size 36px;
+}
+
+.hero p {
+  margin 15px 0 25px;
+  color var(--gris);
+}
+
+ BOTÓN 
+.btn {
+  background var(--cafe);
+  color white;
+  padding 12px 25px;
+  border-radius 4px;
+  text-decoration none;
+  font-weight bold;
+  border none;
+  cursor pointer;
+}
+
+.btnhover {
+  background #6f4621;
+}
+
+ SECCIONES 
+.section {
+  padding 60px 0;
+}
+
+.section.light {
+  background var(--fondo);
+}
+
+.section h2 {
+  text-align center;
+  margin-bottom 40px;
+}
+
+ PRODUCTOS 
+.productos-grid {
+  display grid;
+  grid-template-columns repeat(auto-fit, minmax(220px, 1fr));
+  gap 20px;
+}
+
+.producto {
+  background white;
+  padding 25px;
+  border 1px solid #ddd;
+  border-left 5px solid var(--cafe);
+}
+
+ CONTACTO 
+.contact-form {
+  max-width 500px;
+  margin auto;
+  display flex;
+  flex-direction column;
+  gap 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding 12px;
+  border 1px solid #ccc;
+}
+
+ FOOTER 
+.footer {
+  background var(--negro);
+  color white;
+  text-align center;
+  padding 20px;
+}
